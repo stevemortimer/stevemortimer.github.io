@@ -6,31 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sammy's Birthday</title>
     <style>
-        #countdown {
+        #name {
+            font-size: 10em;
             font-weight: bold;
-            font-size: 6em;
+            position: absolute;
+            left: 60%;
+            top: 30%;
         }
     </style>
+
 </head>
 <body>
-<h1>No peeking!</h1>
-<div id="countdown"></div>
-<script type="text/javascript">
-  const countDownDate = new Date('June 11, 2022 15:00:00').getTime()
-
-  const x = setInterval(function () {
-    let now = new Date().getTime()
-    const distance = countDownDate - now
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24))
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000)
-
-    // Display the result in the element with id="demo"
-    document.getElementById('countdown').innerHTML = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's '
-  }, 1000)
-
-</script>
+<img id="personalized-image" />
+<audio controls="" id="audio" style="visibility:hidden">
+    <source src="" type="audio/wav" id="audioSource">
+</audio>
+<script type="text/javascript" src="js/party.js"></script>
 </body>
 </html>
