@@ -2,8 +2,8 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   get: (searchParams, prop) => searchParams.get(prop),
 });
 
-let image = 'images/' + params.name + '.png';
-let audio = 'media/' + params.name + '.wav';
+const image = 'images/' + params.name + '.png';
+const audio = 'media/' + params.name + '.wav';
 
 document.getElementById('personalized-image').src = image;
 
